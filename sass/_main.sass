@@ -1,0 +1,37 @@
+.main-wrap
+    padding-top: 200px
+.work
+    display: flex
+
+    &__comp
+        width: 526px
+        height: 499px
+        // background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%)
+        border: 30px solid transparent
+        border-image: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%)
+        border-image-slice: 1
+        position: relative
+        margin-right: 138px
+        flex: 0 0 526px
+    &__comp::before
+        content: ''
+        width: 466px
+        height: 466px
+        position: absolute
+        background-image: url(../img/comp.png)
+        background-size: cover
+        top: 43px
+    &__info
+        margin-top: 69px
+
+    &__title
+        font-style: normal
+        font-weight: 700
+        font-size: 48px
+        line-height: 140%
+    &__discription
+        margin-top: 45px
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 160%
