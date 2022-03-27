@@ -19,7 +19,7 @@
                     <li class="logo-menu__item"><a href="#" class="logo-menu__link">Процесс работы</a></li>
                     <li class="logo-menu__item"><a href="#" class="logo-menu__link">Команда</a></li>
                 </ul>
-                <button class="logo-btn">Оставить заявку</button>
+                <button class="logo-btn btn">Оставить заявку</button>
             </div>
         <div class="container">
             <div class="header-wrap">
@@ -42,7 +42,7 @@
                         <span class="header-wrap__item-title">Секунд</span>
                     </div>
                 </div>
-                <button class="header-wrap__btn">Оставить заявку</button>
+                <button class="header-wrap__btn btn">Оставить заявку</button>
             </div>
         </div>
     </header>
@@ -148,7 +148,7 @@
             <div class="footer-wrap">
                 <span class="footer__title">Закажите свою уникальную сборку</span>
                 <span class="footer__about">Мы свяжемся с вами, чтобы уточнить детали заказа</span>
-                <button class="footer__btn">Оставить заявку</button>
+                <button class="footer__btn btn">Оставить заявку</button>
                 <ul class="footer__social">
                     <li class="footer__item">
                         <a href="#" class="footer__link"><img class="footer__logo" src="img/vk.svg" alt="vk"></a>
@@ -166,6 +166,19 @@
             </div>
         </div>
     </footer>
+    <section class="modal">
+        <div class="modal__wrap">
+            <img  class="modal__close"src="img/close.svg" alt="close">
+            <span class="modal__title">Заявка на сборку ПК</span>
+            <span class="modal__about">Мы свяжемся с вами, чтобы обсудить детали заказа</span>
+            <form action="#"  class="modal__form">
+                <input class="modal__input" id="name" type="text" name="name" placeholder="Как вас зовут">
+                <input class="modal__input" id="phone" name="phone" type="text" placeholder="Ваш номер телефона">
+                <input class="modal__input" id="mail" name="mail"  type="text" placeholder="E-Mail">
+                <button class="modal__btn" type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
     <script src="js/main.js"></script>
 </body>
 </html>

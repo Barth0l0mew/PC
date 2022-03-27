@@ -782,4 +782,111 @@ body {
 .footer__item:not(:last-child) {
   margin-right: 30px;
 }
+
+.modal {
+  display: none;
+  background-color: rgba(44, 44, 44, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.modal__wrap {
+  padding-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 663px;
+  height: 551px;
+  background-color: #2c2c2c;
+  z-index: 2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.modal__close {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.modal__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 140%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal__about {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  opacity: 0.5;
+  margin-bottom: 28px;
+}
+
+.modal__input {
+  width: 454px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  display: block;
+  padding-left: 30px;
+}
+
+.modal__input:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.modal__btn {
+  margin-top: 32px;
+  display: block;
+  width: 196px;
+  height: 44px;
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.active {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

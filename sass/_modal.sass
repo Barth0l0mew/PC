@@ -1,0 +1,73 @@
+.modal
+    display: none
+    background-color: rgba($colorModal, 0.5)
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 1
+    &__wrap
+        padding-top: 90px
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 663px
+        height: 551px
+        background-color: $colorModal
+        z-index: 2
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    &__close
+        width: 25px
+        height: 25px
+        position: absolute
+        top: 20px
+        right: 30px
+    &__title
+        font-style: normal
+        font-weight: 700
+        font-size: 48px
+        line-height: 140%
+        display: block
+        margin-bottom: 10px
+    &__about
+        display: block
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 160%
+        opacity: 0.5
+        margin-bottom: 28px
+    &__input
+        width: 454px
+        height: 44px
+        border-radius: 50px
+        background-color: rgba($colorText, 0.25)
+        color: $colorText
+        display: block
+        padding-left: 30px
+    &__input:not(:last-child)
+        margin-bottom: 16px
+    &__btn
+        margin-top: 32px
+        display: block
+        width: 196px
+        height: 44px
+        background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%)
+        border-radius: 50px
+        border: none
+        text-align:
+        cursor: pointer
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 150%
+    &__form
+        display: flex
+        flex-direction: column
+        align-items: center
+.active
+    display: block
