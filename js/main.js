@@ -28,9 +28,9 @@ function modal(){
 setInterval( time , 1000);
 time();
 
-link[0].addEventListener('click',function(event){window.scrollBy(0,1036); event.preventDefault()})
-link[1].addEventListener('click',function(event){window.scrollBy(0,1823); event.preventDefault()})
-link[2].addEventListener('click',function(event){window.scrollBy(0,2458); event.preventDefault()})
+// link[0].addEventListener('click',function(event){window.scrollBy({top:1036,left:0,behavior:"smooth"}); event.preventDefault()})
+// link[1].addEventListener('click',function(event){window.scrollBy({top:1823,left:0,behavior:"smooth"}); event.preventDefault()})
+// link[2].addEventListener('click',function(event){window.scrollBy({top:2458,left:0,behavior:"smooth"}); event.preventDefault()})
 for (let key of btn){
     key.addEventListener('click', modal);
 }

@@ -355,6 +355,10 @@ body {
   font-family: Roboto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 1315px;
   margin: 0 auto;
@@ -365,7 +369,6 @@ body {
   background-size: cover;
   background-position: center, center;
   padding-top: 48px;
-  min-width: 1920px;
 }
 
 .logo {
@@ -378,8 +381,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1730px;
-  margin: auto;
+  max-width: 1730px;
+  padding-left: 40px;
+  padding-right: 80px;
+  margin: 0 auto;
 }
 
 .logo-foto {
@@ -503,10 +508,6 @@ body {
   cursor: pointer;
 }
 
-.main {
-  min-width: 1920px;
-}
-
 .main-wrap {
   padding-top: 200px;
 }
@@ -558,10 +559,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-}
-
-.start {
-  min-width: 1920px;
 }
 
 .start-wrap {
@@ -645,10 +642,6 @@ body {
   margin-top: 200px;
 }
 
-.teachers {
-  min-width: 1920px;
-}
-
 .teachers-about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -723,10 +716,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.footer {
-  min-width: 1920px;
 }
 
 .footer__title {
@@ -904,5 +893,255 @@ body {
 
 .active {
   display: block;
+}
+
+@media screen and (max-width: 1350px) {
+  .container {
+    max-width: 960px;
+  }
+  .logo {
+    max-width: 1315px;
+  }
+  .logo-menu__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  .container {
+    max-width: 500px;
+  }
+  .header-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-wrap__title {
+    font-size: 48px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .logo {
+    max-width: 960px;
+  }
+  .logo-btn {
+    display: none;
+  }
+  .logo-menu__link {
+    font-size: 16px;
+  }
+  .logo-menu__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .work__comp {
+    width: 394px;
+    height: 374px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 394px;
+            flex: 0 0 394px;
+    border: 22px solid transparent;
+    -o-border-image: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+       border-image: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-image-slice: 1;
+  }
+  .work__comp::before {
+    width: 349px;
+    height: 349px;
+    top: 34px;
+  }
+  .work {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .work__comp {
+    margin-right: 0;
+  }
+  .work__info {
+    max-width: 526px;
+  }
+  .start-work__about {
+    margin: 0 auto;
+  }
+  .infografic {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .infografic__item {
+    width: 45%;
+  }
+  .footer__title {
+    font-size: 24px;
+    text-align: center;
+  }
+  .footer__about {
+    font-size: 14px;
+  }
+  .start-work {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .teachers-about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    max-width: 320px;
+    width: 92%;
+    min-width: 268px;
+  }
+  .main-wrap {
+    padding-top: 200px;
+  }
+  .start-wrap {
+    margin-top: 50px;
+  }
+  .teachers-wrap {
+    margin-top: 50px;
+  }
+  .footer-wrap {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .logo-menu {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-wrap__title {
+    font-size: 24px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-wrap__time {
+    display: none;
+  }
+  .start-work__icon {
+    width: 65px;
+    height: 65px;
+  }
+  .start-work__title {
+    font-size: 24px;
+  }
+  .work__comp {
+    width: 263px;
+    height: 249px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 263px;
+            flex: 0 0 263px;
+    border: 15px solid transparent;
+    -o-border-image: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+       border-image: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-image-slice: 1;
+  }
+  .work__comp::before {
+    width: 233px;
+    height: 233px;
+    top: 23px;
+  }
+  .start-work__about {
+    width: 95%;
+  }
+  .infografic {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .infografic__item {
+    width: 90%;
+  }
+  .logo {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .logo-btn {
+    display: none;
+  }
+  .logo-menu__link {
+    font-size: 12px;
+  }
+  .logo-menu__item:not(:last-child) {
+    margin-right: 0px;
+  }
+  .start-work {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .teachers-about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal__wrap {
+    width: 90%;
+    height: 551px;
+  }
+  .modal__close {
+    width: 15px;
+    height: 15px;
+  }
+  .modal__title {
+    font-size: 24px;
+  }
+  .modal__about {
+    font-size: 10px;
+  }
+  .modal__input {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
