@@ -503,6 +503,10 @@ body {
   cursor: pointer;
 }
 
+.main {
+  min-width: 1920px;
+}
+
 .main-wrap {
   padding-top: 200px;
 }
@@ -554,6 +558,10 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
+}
+
+.start {
+  min-width: 1920px;
 }
 
 .start-wrap {
@@ -637,6 +645,10 @@ body {
   margin-top: 200px;
 }
 
+.teachers {
+  min-width: 1920px;
+}
+
 .teachers-about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -711,6 +723,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer {
+  min-width: 1920px;
 }
 
 .footer__title {
